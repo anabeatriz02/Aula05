@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Fintech Fulbank</title>
+</head>
+<body>
+
+    <main>
+
+        <form method="POST" action="./calcular.php">
+
+            <h1>Ajuste salarial</h1>
+
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome"/>
+
+        <label for="salarioAtual">Salário atual: </label>
+        <input type="number" id="salarioAtual" name="salarioAtual" placeholder="Qual seu salário?">
+
+        <label for="genero">Gênero:</label>
+
+        <div class="fem">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="masc" name="genero" value="M"/>
+        </div>
+
+        <div class="masc">
+            <label for="fem">Feminino</label>
+            <input type="radio" id="fem" name="genero" value="F"/>
+        </div>
+
+        <div class="outros">
+            <label for="outros">Outros</label>
+            <input type="radio" id="outros" name="genero" value="outros"/>
+        </div>
+
+        <label for="cargo">Cargo:</label>
+        <select name="cargo" id="cargo">
+            <option selected disabled value="nada">Selecione seu cargo</option>
+            <option value="administador">Administrador</option>
+            <option value="gerente administrativo">Gerente Administrativo</option>
+            <option value="logisitica ">Logistica</option>
+            <option value="empacotador">Empacotador</option>
+            <option value="analista financeiro">Análista Financeiro</option>
+            <option value="fiscal">Fiscal</option>
+            <option value="rh">RH</option>
+        </select>
+
+        <button>Calcular</button>
+    </form>
+</main>
+
+    <footer>
+        <span>Copyright &copy; | Ana Beatriz Pereira de Brito</span>
+    </footer>
+</body>
+</html>

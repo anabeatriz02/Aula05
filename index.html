@@ -9,36 +9,37 @@
 </head>
 <body>
 
+    <div class="box"> 
     <main>
 
         <form method="POST" action="./calcular.php">
 
             <h1>Ajuste salarial</h1>
 
-        <label for="nome">Nome:</label>
+        <label for="nome"><b>Nome:</b></label>
         <input id="nome" name="nome"/>
 
-        <label for="salarioAtual">Salário atual: </label>
+        <label for="salarioAtual"><b>Salário atual:</b></label>
         <input type="number" id="salarioAtual" name="salarioAtual" placeholder="Qual seu salário?">
 
-        <label for="genero">Gênero:</label>
+        <label for="genero"><b>Gênero:</b></label>
 
-        <div class="fem">
+        <div class="input-radio">
+            <input type="radio" id="Masc" name="genero" value="M"/>
             <label for="masc">Masculino</label>
-            <input type="radio" id="masc" name="genero" value="M"/>
         </div>
 
-        <div class="masc">
+        <div class="input-radio">
+            <input type="radio" id="Fem" name="genero" value="F"/>
             <label for="fem">Feminino</label>
-            <input type="radio" id="fem" name="genero" value="F"/>
         </div>
 
-        <div class="outros">
+        <div class="input-radio">
+            <input type="radio" id="outros" name="genero" value="O"/>
             <label for="outros">Outros</label>
-            <input type="radio" id="outros" name="genero" value="outros"/>
         </div>
 
-        <label for="cargo">Cargo:</label>
+        <label for="cargo"><b>Cargo:</b></label>
         <select name="cargo" id="cargo">
             <option selected disabled value="nada">Selecione seu cargo</option>
             <option value="administador">Administrador</option>
@@ -53,7 +54,7 @@
         <button>Calcular</button>
     </form>
 </main>
-
+</div>
     <footer>
         <span>Copyright &copy; | Ana Beatriz Pereira de Brito</span>
     </footer>

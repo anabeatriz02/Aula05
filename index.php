@@ -1,3 +1,43 @@
+<?php
+
+// $cargos = array();
+
+// declarando um vetor
+$cargos = [
+    "Gerente de produtos",
+    "Gerente de projetos",
+    "Desenvolvedor Back-end",
+    "Desenvolvedor Front-end",
+];
+
+// adicionando um elemento no valor
+$cargos[] = "DevOps";
+$cargos[] = "Designer UI/UX";
+$cargos[] = "QA";
+$cargos[] = "Engenhieor de Software";
+$cargos[] = "Arquiteto";
+$cargos[] = "DBA";
+$cargos[] = "Analista de sistemas";
+
+// // excluindo uma posição do vetor
+// unset($cargos[2]);
+
+// imprimindo um vator na tela
+// print_r($cargos);
+
+// die;
+
+
+?>
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,13 +81,21 @@
         <label for="cargo"><b>Cargo:</b></label>
         <select name="cargo" id="cargo">
             <option selected disabled value="nada">Selecione seu cargo</option>
-            <option value="administador">Administrador</option>
-            <option value="gerente administrativo">Gerente Administrativo</option>
-            <option value="logisitica ">Logistica</option>
-            <option value="empacotador">Empacotador</option>
-            <option value="analista financeiro">Análista Financeiro</option>
-            <option value="fiscal">Fiscal</option>
-            <option value="rh">RH</option>
+
+           <?php
+
+        //    $tam = count($cargos);
+        //    $contador = 0;
+        //    while($contador < $tam){
+        //        echo "<option>" . $cargos[$contador] . "</option>";
+        //        $contador++;
+        //    }
+
+           foreach($cargos as $cargo){
+               echo "<option>$cargo</option>";
+           }
+           ?>
+
         </select>
 
         <button>Calcular</button>
